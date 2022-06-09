@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adult BMI Calculator</title>
+</head>
+<body>
+<h1>Adult BMI Calculator</h1>
+<main>
+    <form action="/bmi-calculator" method="post">
+        <section>
+            <label>Height:
+                <input type="text" name="feet" size="5" placeholder="feet" required>
+                <input type="text" name="inches" size="5" placeholder="inches" required>
+            </label>
+        </section>
+        <section>
+            <label>Weight:
+                <input type="text" name="pounds" size="15" placeholder="in pounds" required>
+            </label>
+        </section>
+        <button type="submit">Calculate BMI</button>
+    </form>
+</main>
+
+</body>
+</html>
