@@ -39,15 +39,10 @@ app.get("/bmi-calculator", function (req, res) {
 
 app.post("/bmi-calculator", function (req, res) {
     let weight = parseFloat(req.body.pounds);
-    console.log("this is weight: " + weight)
     let feet = parseFloat(req.body.feet);
-    console.log("this is feet: " + feet)
     let inches = parseFloat(req.body.inches);
-    console.log("this is inches: " + inches);
     let convertedHeight = (feet * 12) + inches; // converts input to solely inches
-    console.log("height as inches: " + convertedHeight);
     let BMI = weight / Math.pow(convertedHeight, 2) * 703.06957964; // formula for bmi using inches as height input
-    console.log("BMI" + BMI);
 
     res.send("Your BMI is: " + BMI.toFixed(2));
 })
